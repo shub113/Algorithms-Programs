@@ -1,16 +1,24 @@
 package com.bridgeit.AlgorithmPrograms.utility;
 
+import java.util.ArrayList;
+
 public class PallindromCheck {
-	public static void checkPallin(int i){
-		int j=i;
-		int rev=0;
-		while(i>0){
-			rev=(rev*10)+i%10;
-			i=i/10;
+	public static void checkPallin(ArrayList<Integer> array){
+		ArrayList<Integer> array2= new ArrayList<Integer>();
+		AnagramCheck anagram= new AnagramCheck();
+		for(int i:array){
+			int j=i;
+			int rev=0;
+			while(j>0){
+				rev=(rev*10)+j%10;
+				j=j/10;
+			}
+			if(i==rev){
+				array2.add(i);
+			}
 		}
-		if(j==rev)
-			System.out.println("\tPallindrom number");
-		else
-			System.out.println("Not a pallindrom");
+		System.out.println("Pallindrom"+array2);
+		anagram.check(array2);
+			
 	}
 }

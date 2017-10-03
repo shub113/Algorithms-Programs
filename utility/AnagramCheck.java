@@ -23,7 +23,7 @@ public class AnagramCheck {
 			}
 			
 		}
-		System.out.print("Anagrams : ");
+		System.out.print("Anagrams & pallin : ");
 		System.out.print(array2);
 	}
 }

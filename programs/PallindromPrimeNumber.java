@@ -27,12 +27,12 @@ public class PallindromPrimeNumber {
 					break;
 				}
 			}if(flag==0){
-				System.out.println(i);
+				//System.out.println(i);
 				array.add(i);
-				pallin.checkPallin(i);
 			}
 		}
-		anagam.check(array);
+		System.out.println(array);
+		pallin.checkPallin(array);
 	}
 	
 }
